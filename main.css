@@ -1,0 +1,499 @@
+body{
+    background-color: rgb(40, 40, 40);
+    scale: 1;
+}
+
+@font-face {
+    font-family: "fuenteBoton";
+    src: url("Fuentes/VIKING-N.otf");
+}
+
+#Select{
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: 55px;
+    gap: 5px;
+}
+
+#imagen{
+    grid-row: 1;
+    grid-column: 1/4;
+    height: 500px;
+    width: 1200;
+}
+
+.boton-lugar {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    height: 70px;
+    width: 400px;
+    font-family: "fuenteBoton";
+    font-size: 50px;
+    color: rgb(47, 42, 39);
+    background-color: darkgoldenrod;
+
+}
+.botonselect {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    height: 70px;
+    width: 400px;
+    font-family: "fuenteBoton";
+    font-size: 50px;
+    color: rgb(47, 42, 39);
+    background-color: darkgoldenrod;
+    
+}
+
+.botonselect:hover{
+    background-color: rgb(192, 71, 71);
+    color: rgb(223, 223, 210);
+    cursor: pointer;
+}
+
+.boton-lugar:hover{
+    background-color: rgb(192, 71, 71);
+    color: rgb(223, 223, 210);
+    cursor: pointer;
+}
+
+.botonataque {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    height: 70px;
+    width: 400px;
+    font-family: "fuenteBoton";
+    font-size: 50px;
+    color: rgb(47, 42, 39);
+    background-color: darkgoldenrod;
+}
+.botonataque:hover {
+    background-color: rgb(192, 71, 71);
+    color: rgb(223, 223, 210);
+    cursor: pointer;
+    
+}
+
+#Exit:hover{
+    background-color: rgb(99, 27, 208);
+    color: rgb(223, 223, 210);
+    cursor: pointer;
+}
+#Regresar:hover{
+    background-color: rgb(99, 27, 208);
+    color: rgb(223, 223, 210);
+    cursor: pointer;
+}
+
+#Exit {
+    display: block;
+    margin-left: 100;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    height: 70px;
+    width: 400px;
+    font-family: "fuenteBoton";
+    font-size: 25px;
+    color: rgb(47, 42, 39);
+    background-color: darkgoldenrod;
+
+}
+#Regresar {
+    
+    display: block;
+    margin-left: 100;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    height: 70px;
+    width: 400px;
+    font-family: "fuenteBoton";
+    font-size: 25px;
+    color: rgb(47, 42, 39);
+    background-color: darkgoldenrod;
+
+}
+
+.hidden {
+    display: none;
+}
+
+.Btaberna {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    height: 70px;
+    width: 400px;
+    font-family: "fuenteBoton";
+    font-size: 50px;
+    color: rgb(47, 42, 39);
+    background-color: darkgoldenrod;
+
+}
+
+.Btaberna:hover {
+    background-color: rgb(192, 71, 71);
+    color: rgb(223, 223, 210);
+    cursor: pointer;
+    
+}
+
+#retorno {
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: 55px;
+    gap: 10px;
+}
+
+#comprar {
+    
+    grid-template-rows: 80px;
+    gap: 50px;
+    
+}
+.botoncomp {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    height: 70px;
+    width: 500px;
+    font-family: "fuenteBoton";
+    font-size: 29px;
+    color: rgb(47, 42, 39);
+    background-color: darkgoldenrod;
+    
+}
+
+.botoncomp:hover{
+    background-color: rgb(192, 71, 71);
+    color: rgb(223, 223, 210);
+    cursor: pointer;
+    
+}
+
+.apostarb {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    height: 70px;
+    width: 500px;
+    font-family: "fuenteBoton";
+    font-size: 29px;
+    color: rgb(47, 42, 39);
+    background-color: darkgoldenrod;
+    
+}
+
+.apostarb:hover{
+    background-color: rgb(192, 71, 71);
+    color: rgb(223, 223, 210);
+    cursor: pointer;
+    
+}
+
+.gitanab {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    height: 70px;
+    width: 500px;
+    font-family: "fuenteBoton";
+    font-size: 29px;
+    color: rgb(47, 42, 39);
+    background-color: darkgoldenrod;
+    
+}
+
+.gitanab:hover{
+    background-color: rgb(192, 71, 71);
+    color: rgb(223, 223, 210);
+    cursor: pointer;
+    
+}
+p {
+    font-family: 'Gill Sans';
+    font-size: 25px;
+    color: rgb(47, 42, 39);
+    background-color: darkgoldenrod;
+    text-align: center;
+    width: 1100px;
+}
+
+.text-flicker-out-glow {
+	-webkit-animation: text-flicker-out-glow 5.5s linear both;
+	        animation: text-flicker-out-glow 5.5s linear both;
+            font-family: "fuenteboton";
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+
+}
+
+ @-webkit-keyframes text-flicker-out-glow {
+    0% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    13.9% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    14% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    14.9% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    15% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    22.9% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    23% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    24.9% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    25% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    34.9% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    35% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    39.9% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    40% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+    }
+    42.9% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+    }
+    43% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    44.9% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    45% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    50% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    54.9% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    55% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    69.4% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    69.5% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    69.9% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    70% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    79.4% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    79.9% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+    }
+    80% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    89.8% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    89.9% {
+      opacity: 1;
+      text-shadow: none;
+    }
+    90% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes text-flicker-out-glow {
+    0% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    13.9% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    14% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    14.9% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    15% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    22.9% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    23% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    24.9% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    25% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    34.9% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    35% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    39.9% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    40% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+    }
+    42.9% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+    }
+    43% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    44.9% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    45% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    50% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    54.9% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    55% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    69.4% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    69.5% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    69.9% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    70% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    79.4% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    79.9% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+    }
+    80% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    89.8% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    89.9% {
+      opacity: 1;
+      text-shadow: none;
+    }
+    90% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
