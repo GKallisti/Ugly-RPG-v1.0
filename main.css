@@ -5,8 +5,14 @@ body{
 
 @font-face {
     font-family: "fuenteBoton";
-    src: url("Fuentes/VIKING-N.otf");
+    src: url("Fuentes/VIKING-N.ttf");
+    
 }
+@font-face {
+  font-family: "gameover";
+  src: url("Fuentes/GothicPixels.ttf");
+}
+
 
 #Select{
     grid-template-columns: repeat(3, 400px);
@@ -91,6 +97,14 @@ body{
     background-color: rgb(99, 27, 208);
     color: rgb(223, 223, 210);
     cursor: pointer;
+}
+
+#parrafo {
+  font-family: "gameover";
+  font-size: 28px;
+  text-align: left;
+
+
 }
 
 #Exit {
@@ -229,10 +243,10 @@ body{
     
 }
 p {
-    font-family: 'Gill Sans';
+    font-family: "fuenteBoton";
     font-size: 25px;
-    color: rgb(47, 42, 39);
-    background-color: darkgoldenrod;
+    color: rgb(248, 199, 5);
+    background-color: rgb(0, 0, 0);
     text-align: center;
     width: 1100px;
 }
@@ -240,8 +254,8 @@ p {
 .text-flicker-out-glow {
 	-webkit-animation: text-flicker-out-glow 5.5s linear both;
 	        animation: text-flicker-out-glow 5.5s linear both;
-            font-family: "fuenteboton";
-            font-size: 20px;
+            font-family: "gameover";
+            font-size: 25px;
             color: rgb(255, 255, 255);
 
 }

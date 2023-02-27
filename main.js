@@ -81,6 +81,20 @@ function atk(num1, num2) {
     let resultado = num1 - num2
     return resultado
 }
+function Victoria(){
+        ataqueS.style.visibility = "hidden"
+        botonregreso.style.visibility = "hidden"
+        imagen.src = "Imagenes/Victory.png"
+        parrafo.innerText = "Felicidades viajero! Has llegado al final de esta aventura..."
+              
+}
+function Derrota(){
+    ataqueS.style.visibility = "hidden"
+    botonregreso.style.visibility = "hidden"
+    imagen.src = "Imagenes/Defeat.png"
+    parrafo.innerText = "Oh! Mejor suerte la proxima..."
+          }
+
 function Comprar() {
     stage = -1
     taberna.style.display = "none"
@@ -461,6 +475,7 @@ function Ataques() {
                         className: "info",
                         style: { background: "linear-gradient(to right, #00b09b, #96c93d)", }
                     }).showToast();
+                    
 
                 }
                 else if (Pj.hp > 0 && en.hp <= 0) {
@@ -486,6 +501,7 @@ function Ataques() {
                         className: "info",
                         style: { background: "linear-gradient(to right, #00b09b, #96c93d)", }
                     }).showToast();
+                    Victoria()
 
                 }
                 else if (Pj.hp <= 0 && en.hp > 0) {
@@ -506,6 +522,8 @@ function Ataques() {
                         className: "info",
                         style: { background: "linear-gradient(to right, #00b09b, #96c93d)", }
                     }).showToast();
+                    Derrota()
+
                 }
             })
 
@@ -628,6 +646,8 @@ function Ataques() {
                         style: { background: "linear-gradient(to right, #00b09b, #96c93d)", }
                     }).showToast();
 
+                    Victoria()
+
                 }
                 else if (Pj.hp <= 0 && en.hp > 0) {
 
@@ -670,6 +690,8 @@ function Ataques() {
                     className: "info",
                     style: { background: "linear-gradient(to right, #00b09b, #96c93d)", }
                 }).showToast();
+               
+                Derrota()
 
             }); break;
 
@@ -759,6 +781,7 @@ function Ataques() {
                         className: "info",
                         style: { background: "linear-gradient(to right, #00b09b, #96c93d)", }
                     }).showToast();
+                    Victoria()
 
                 }
                 else if (Pj.hp <= 0 && en.hp >= 0) {
@@ -779,6 +802,7 @@ function Ataques() {
                         className: "info",
                         style: { background: "linear-gradient(to right, #00b09b, #96c93d)", }
                     }).showToast();
+                    Derrota()
 
                 }
             })
@@ -803,8 +827,7 @@ function Ataques() {
                     className: "info",
                     style: { background: "linear-gradient(to right, #00b09b, #96c93d)", }
                 }).showToast();
-
-                
+                Victoria()
             })
     }
 }
@@ -1015,4 +1038,7 @@ botonregreso.addEventListener('click', (event) => {
     selectedPj = JSON.parse(localStorage.getItem("selected"))
    }
 })
+
+
 selecPersonaje()
+
