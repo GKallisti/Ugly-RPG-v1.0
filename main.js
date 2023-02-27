@@ -787,6 +787,7 @@ function Ataques() {
                     imagen.src = "Imagenes/HuirNBosque.png"
                 } else {imagen.src = "Imagenes/HuirNCueva.png"
                 }
+                ataqueS.style.visibility = "hidden"
                 Toastify({
                     text: "Usas tu Bomba de humo para evadir el ataque y sigues tu camino a la siguiente ciudad... ",
                     duration: 4000,
