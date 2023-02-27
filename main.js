@@ -82,13 +82,21 @@ function atk(num1, num2) {
     return resultado
 }
 function Victoria(){
+    parrafod.classList.remove('hidden')
+        parrafod.style.visibility = "visible"
+        parrafod.style.display = "grid"
         ataqueS.style.visibility = "hidden"
+        parrafo.style.display = "grid"
         botonregreso.style.visibility = "hidden"
         imagen.src = "Imagenes/Victory.png"
         parrafo.innerText = "Felicidades viajero! Has llegado al final de esta aventura..."
               
 }
 function Derrota(){
+    parrafod.classList.remove('hidden')
+    parrafod.style.visibility = "visible"
+    parrafod.style.display = "grid"  
+    parrafo.style.display = "grid"
     ataqueS.style.visibility = "hidden"
     botonregreso.style.visibility = "hidden"
     imagen.src = "Imagenes/Defeat.png"
@@ -988,6 +996,7 @@ botonregreso.addEventListener('click', (event) => {
         localStorage.clear()
     }
     else if (stage == 3) {
+
         Toastify({
             text: "Hey! Volver atras aca es lo mismo que huir...",
             duration: 4000,
