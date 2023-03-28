@@ -66,14 +66,14 @@ let stage = 1
 let fortuna
 let zodiac = ["aries","taurus","cancer","leo","scorpio","virgo","capricorn","aquarius","libra"]
 let signo = zodiac[[Math.floor(Math.random() * zodiac.length)]]
-const Url = `https://aztro.sameerkumar.website/?sign=${signo}&day=today`;
+const Url = `https://aztro.sameerkumar.website/?sign=${signo}&day=today `;
     fetch( Url, {
         method: 'POST'
     })
     .then(response => response.json())
     .then(json => {
-         fortuna = json;
-        console.log(fortuna.description);
+         fortuna = json.description;
+        console.log(fortuna);
     });
 //Aca empiezan las funciones 
 
